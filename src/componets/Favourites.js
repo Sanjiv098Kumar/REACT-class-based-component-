@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { movies } from "../moviesData";
+
 
 export class Favourites extends Component {
   constructor() {
@@ -153,13 +153,6 @@ export class Favourites extends Component {
    if(this.state.currGenre!='All Genres'){
     filterArr= this.state.movies.filter((movieObj)=> genreids[movieObj.genre_ids[0]]==this.state.currGenre)
   }
-
- 
-
- 
-  
-
-  
 
     return (
       <div className="main">
